@@ -1,0 +1,91 @@
+.nav__list {
+    font-size: 1.4rem;
+}
+.nav__list a {
+    color: #2c87a2; /* Change the color to your desired color */
+}
+#about {
+    padding-top: 1;
+    color: white;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 1rem;
+
+}
+
+.about__item {
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgb(187, 210, 12);
+}
+
+.about__item__img img {
+    border-radius: 12px;
+    max-width: 500px; 
+    height: 200px;
+}
+
+.about__item__text {
+    flex: 1; 
+    font-size: 1.4rem;
+    color:white;
+    text-align: center;
+}
+
+.about__left {
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+.about__right {
+    margin-right: auto;
+}
+
+.about__text {
+    color: rgb(226, 250, 7);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .about__wrapper {
+        margin-top: 2rem;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center; 
+        color: white;
+    }
+
+    .about__item {
+        padding: 1rem;
+        align-items: center; 
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__item__text {
+        font-size: 1.6rem;
+    }
+
+    .about__text {
+        max-width: 600px;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+/* End About Us Section Styles */
