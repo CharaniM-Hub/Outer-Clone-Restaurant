@@ -1,0 +1,203 @@
+.nav__list {
+    font-size: 1.4rem;
+}
+.nav__list a {
+    color: #14667f; /* Change the color to your desired color */
+}
+
+:root{
+    --Inter: 'Inter', sans-serif;
+    --Kaushan: 'Kaushan Script', cursive;
+    --Mont: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#000
+}
+body{
+    line-height: 1.5;
+    font-family: var(--Mont);
+    font-size: 1.2rem;
+    max-width: 2000px;
+}
+.container1 {
+    max-width: 800px;
+    padding: 80px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    background: #ffffff33;
+    margin: 20rem;
+    box-align: center;
+}
+
+/* Rest of your existing styles... */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    color:#fff;
+
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup-btn {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container1 {
+        padding: 20px;
+        margin: 1rem auto; /* Adjust margin for smaller screens */
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .nav__list a {
+        color: #96ddf2; /* Change the color to your desired color */
+    }
+}
+
+.room-title{
+    padding: 0.6rem 0;
+    display: flex;
+}
+.room-title{
+    font-family: var(--Inter);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #ff9505;
+    display: block;
+    margin: 0 1rem;
+}
+.room-items{
+    margin: 2rem 0;
+}
+.room-item{
+    border-radius: 4px;
+    background: #cfdcd413;
+    backdrop-filter: blur(10px);
+    color: #000;
+    margin: 0.6rem 0;
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+}
+.second-btn{
+    background-color: rgb(222, 238, 179);
+    border-radius: 15px;
+    font-size: 1.0rem;
+    padding: 1.0rem 1.5rem;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.room-img img{
+    border-radius: 4px;
+    size: 40%;
+}
+.room-content{
+    padding: 1rem;
+}
+.room-name{
+    font-family: var(--Inter);
+    color: #ff9505;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background: #ff9505;
+}
+.room-time{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+.category{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: var(--Inter);
+}
+.category span{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px){
+    .room-item{
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 1rem;
+    }
+    .room-content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .room-head p{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .room-head p{
+        width: 50%;
+    }
+    .room-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
